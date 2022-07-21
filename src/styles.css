@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 90%;
+  width: 700px;
+  border: 1px solid #eee;
+  padding: 0.25em;
+  margin-inline: auto;
+  display: flex;
+  margin-top: 1em;
+  gap: 1em;
+}
+.container > div:last-child {
+  margin-right: auto;
+  order: 1;
+}
+.container .A {
+  order: 2;
+}
+.container .B {
+  order: 3;
+}
+
+.container > div {
+  border: 1px solid #ddd;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  align-self: flex-start;
+}
+.container > div:nth-child(odd) {
+  background-color: purple;
+}
+.container > div:nth-child(even) {
+  background-color: yellowgreen;
+}
+
+/* bigger screen css */
+
+@media (min-width: 1000px) {
+  .container {
+    display: flex;
+    gap: 0;
+    justify-content: space-between;
+  }
+  .container .A {
+    order: 1;
+  }
+  .container .B {
+    order: 2;
+  }
+  .container > div:last-child {
+    order: 3;
+    margin: 0;
+  }
+}
