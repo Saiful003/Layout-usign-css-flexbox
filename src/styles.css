@@ -18,9 +18,9 @@
   margin-top: 1em;
   gap: 1em;
 }
-.container > div:last-child {
-  margin-right: auto;
+.container .C {
   order: 1;
+  margin-right: auto;
 }
 .container .A {
   order: 2;
@@ -60,7 +60,7 @@
   .container .B {
     order: 2;
   }
-  .container > div:last-child {
+  .container .C {
     order: 3;
     margin: 0;
   }
