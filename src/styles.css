@@ -64,3 +64,19 @@
     margin: 0;
   }
 }
+
+@media (min-width: 1200px) {
+  .container {
+    gap: 1em;
+    justify-content: start;
+  }
+  .container .A {
+    order: 3;
+  }
+  .container .B {
+    margin-right: auto;
+  }
+  .container .C {
+    order: 1;
+  }
+}
